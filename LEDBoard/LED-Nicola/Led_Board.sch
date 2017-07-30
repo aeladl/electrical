@@ -28,17 +28,6 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:KiCAD_Tutorial
-LIBS:5vregulatortab
-LIBS:ssr
-LIBS:SSRBoard-cache
-LIBS:SSRBoard-rescue
-LIBS:Arduino_Uno_R3_From_Scratch
-LIBS:Arduino_Uno_R3_From_Scratch-cache
-LIBS:MFN_Atmel
-LIBS:xtr117
-LIBS:mmbt2222alt1g
-LIBS:VO14642AABTR
 LIBS:Led_Board-cache
 EELAYER 25 0
 EELAYER END
@@ -543,6 +532,8 @@ F 0 "J11" H 9100 3750 50  0000 C CNN
 F 1 "LED CONN 01X16" V 9200 2900 50  0000 C CNN
 F 2 "hyperCustom:CONN_PHOENIX_1844359_16PIN" H 9100 2900 50  0001 C CNN
 F 3 "" H 9100 2900 50  0001 C CNN
+F 4 "277-1220-ND" H 9100 2900 60  0001 C CNN "Digikey PN"
+F 5 "https://www.digikey.com/product-detail/en/phoenix-contact/1803413/277-1220-ND/260588" H 9100 2900 60  0001 C CNN "Link"
 	1    9100 2900
 	0    -1   -1   0   
 $EndComp
@@ -698,10 +689,59 @@ $EndComp
 NoConn ~ 2600 3450
 Text Label 7400 850  0    60   ~ 0
 24V
-Text Label 7450 1000 0    60   ~ 0
+Text Label 7750 1000 0    60   ~ 0
 Buzzer
 Text Label 7950 1600 2    60   ~ 0
 Buzzer
 Text Label 5950 850  2    60   ~ 0
 5V0
+$Comp
+L Buzzer BZ101
+U 1 1 597D61D1
+P 1600 5200
+F 0 "BZ101" H 1750 5250 50  0000 L CNN
+F 1 "Buzzer" H 1750 5150 50  0000 L CNN
+F 2 "hyperCustom:nicolaBuzzer" V 1575 5300 50  0001 C CNN
+F 3 "" V 1575 5300 50  0001 C CNN
+F 4 "http://www.puiaudio.com/pdf/AI-3035-TWT-3V-R.pdf" H 1600 5200 60  0001 C CNN "Link"
+	1    1600 5200
+	1    0    0    -1  
+$EndComp
+Text Label 1050 5100 2    60   ~ 0
+5V0
+$Comp
+L GND #PWR101
+U 1 1 597D688D
+P 1500 5300
+F 0 "#PWR101" H 1500 5050 50  0001 C CNN
+F 1 "GND" H 1500 5150 50  0000 C CNN
+F 2 "" H 1500 5300 50  0001 C CNN
+F 3 "" H 1500 5300 50  0001 C CNN
+	1    1500 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R102
+U 1 1 597D6C18
+P 1350 5100
+F 0 "R102" V 1430 5100 50  0000 C CNN
+F 1 "R" V 1350 5100 50  0000 C CNN
+F 2 "Resistors_ThroughHole:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 1280 5100 50  0001 C CNN
+F 3 "" H 1350 5100 50  0001 C CNN
+	1    1350 5100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1200 5100 1050 5100
+$Comp
+L R R101
+U 1 1 597D728C
+P 7600 1000
+F 0 "R101" V 7680 1000 50  0000 C CNN
+F 1 "R" V 7600 1000 50  0000 C CNN
+F 2 "Resistors_ThroughHole:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 7530 1000 50  0001 C CNN
+F 3 "" H 7600 1000 50  0001 C CNN
+	1    7600 1000
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
