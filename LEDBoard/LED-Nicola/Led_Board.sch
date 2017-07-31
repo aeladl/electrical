@@ -28,17 +28,6 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:KiCAD_Tutorial
-LIBS:5vregulatortab
-LIBS:ssr
-LIBS:SSRBoard-cache
-LIBS:SSRBoard-rescue
-LIBS:Arduino_Uno_R3_From_Scratch
-LIBS:Arduino_Uno_R3_From_Scratch-cache
-LIBS:MFN_Atmel
-LIBS:xtr117
-LIBS:mmbt2222alt1g
-LIBS:VO14642AABTR
 LIBS:Led_Board-cache
 EELAYER 25 0
 EELAYER END
@@ -497,24 +486,9 @@ F 3 "" H 3050 6650 50  0001 C CNN
 	1    3050 6650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3900 6650 3900 6150
 Connection ~ 3900 6150
 Wire Wire Line
 	3200 6650 3350 6650
-$Comp
-L R R14
-U 1 1 5979C2F0
-P 3500 6650
-F 0 "R14" V 3580 6650 50  0000 C CNN
-F 1 "R" V 3500 6650 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206_HandSoldering" V 3430 6650 50  0001 C CNN
-F 3 "" H 3500 6650 50  0001 C CNN
-	1    3500 6650
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3650 6650 3900 6650
 Wire Wire Line
 	2900 6650 2600 6650
 Text Label 2600 6650 2    60   ~ 0
@@ -778,4 +752,19 @@ Text Label 10400 3100 3    60   ~ 0
 L9
 Text Label 10500 3100 3    60   ~ 0
 GND
+Wire Wire Line
+	3650 6650 3900 6650
+$Comp
+L R R14
+U 1 1 5979C2F0
+P 3500 6650
+F 0 "R14" V 3580 6650 50  0000 C CNN
+F 1 "R" V 3500 6650 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 3430 6650 50  0001 C CNN
+F 3 "" H 3500 6650 50  0001 C CNN
+	1    3500 6650
+	0    1    1    0   
+$EndComp
+Text Label 3900 6650 3    60   ~ 0
+ArduinoLED
 $EndSCHEMATC
