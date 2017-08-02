@@ -1,4 +1,4 @@
-update=2017-07-19 8:08:23 PM
+update=2017-08-02 12:14:05 AM
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=../../../Downloads/full_electrical-master/full_electrical-master;C:/Users/Nicola's computer/Downloads/full_electrical-master/full_electrical-master;C:/Users/Nicola's computer/Downloads/arduino_uno_r3_from_scratch-master;C:/Users/Nicola's computer/Downloads/VO14642AABTR
+LibDir=C:/Users/Nicola's computer/Downloads/full_electrical-master/full_electrical-master;C:/Users/Nicola's computer/Downloads/arduino_uno_r3_from_scratch-master;C:/Users/Nicola's computer/Downloads/VO14642AABTR;../../../../../Downloads/Connectors_Phoenix.pretty-master
 [eeschema/libraries]
 LibName1=power
 LibName2=device
