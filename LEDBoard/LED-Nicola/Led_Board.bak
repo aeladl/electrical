@@ -28,17 +28,6 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:KiCAD_Tutorial
-LIBS:5vregulatortab
-LIBS:ssr
-LIBS:SSRBoard-cache
-LIBS:SSRBoard-rescue
-LIBS:Arduino_Uno_R3_From_Scratch
-LIBS:Arduino_Uno_R3_From_Scratch-cache
-LIBS:MFN_Atmel
-LIBS:xtr117
-LIBS:mmbt2222alt1g
-LIBS:VO14642AABTR
 LIBS:Led_Board-cache
 EELAYER 25 0
 EELAYER END
@@ -140,8 +129,6 @@ Wire Wire Line
 Wire Wire Line
 	8850 4800 8850 4900
 Wire Wire Line
-	2600 2350 2850 2350
-Wire Wire Line
 	2600 2450 2850 2450
 Wire Wire Line
 	2600 2550 2850 2550
@@ -150,10 +137,10 @@ Wire Wire Line
 Wire Wire Line
 	2600 2750 2850 2750
 Wire Wire Line
-	2600 2850 2850 2850
+	2600 3050 2850 3050
 Wire Wire Line
-	2600 2950 2850 2950
-Text Label 2850 2350 0    60   ~ 0
+	2600 3150 2850 3150
+Text Label 2900 2000 0    60   ~ 0
 A0
 Text Label 2850 2450 0    60   ~ 0
 A1
@@ -161,17 +148,17 @@ Text Label 2850 2650 0    60   ~ 0
 A3
 Text Label 2850 2750 0    60   ~ 0
 A4
-Text Label 2850 2850 0    60   ~ 0
+Text Label 2850 3050 0    60   ~ 0
 A5
-Text Label 2850 2950 0    60   ~ 0
+Text Label 2850 3150 0    60   ~ 0
 A6
-Text Label 2600 2050 0    60   ~ 0
+Text Label 2650 1700 0    60   ~ 0
 Transistor
 Wire Wire Line
-	2600 3050 2850 3050
+	2600 3250 2850 3250
 Text Label 2850 2550 0    60   ~ 0
 A2
-Text Label 2600 2250 0    60   ~ 0
+Text Label 2650 1900 0    60   ~ 0
 24V
 $Comp
 L R R6
@@ -240,7 +227,7 @@ F 3 "" H 6450 4650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2600 3150 2850 3150
+	2600 3350 2850 3350
 $Comp
 L MOUNTING_HOLE J1
 U 1 1 59795675
@@ -491,7 +478,7 @@ Wire Wire Line
 Text Label 2600 6650 2    60   ~ 0
 GND
 Wire Wire Line
-	2600 3250 2850 3250
+	2600 3450 2850 3450
 Wire Wire Line
 	7650 4500 7650 4250
 Text Label 6450 4250 0    60   ~ 0
@@ -652,25 +639,25 @@ Wire Wire Line
 Wire Wire Line
 	5800 1000 5800 1150
 Wire Wire Line
-	2600 3350 2850 3350
-Text Label 2600 2150 0    60   ~ 0
+	2600 3550 2850 3550
+Text Label 2650 1800 0    60   ~ 0
 5V0
-Text Label 2850 3050 0    60   ~ 0
+Text Label 2850 3250 0    60   ~ 0
 A7
-Text Label 2850 3150 0    60   ~ 0
+Text Label 2850 3350 0    60   ~ 0
 A8
 $Comp
 L CONN_01X06 J7
 U 1 1 597E4F88
-P 2400 3100
-F 0 "J7" H 2500 2950 50  0000 C CNN
-F 1 "Arduino CONN_01X06" H 2850 2850 50  0000 C CNN
-F 2 "hyperCustom:CONN_PHOENIX_1844252_6PIN" H 2400 3100 50  0001 C CNN
-F 3 "" H 2400 3100 50  0001 C CNN
-F 4 "277-2427-ND" H 2400 3100 60  0001 C CNN "Digikey PN"
-F 5 "Phoenix" H 2400 3100 60  0001 C CNN "Mfg. "
-F 6 "1844525" H 2400 3100 60  0001 C CNN "Mfg. PN"
-	1    2400 3100
+P 2400 3300
+F 0 "J7" H 2500 3150 50  0000 C CNN
+F 1 "Arduino CONN_01X06" H 2850 3050 50  0000 C CNN
+F 2 "hyperCustom:CONN_PHOENIX_1844252_6PIN" H 2400 3300 50  0001 C CNN
+F 3 "" H 2400 3300 50  0001 C CNN
+F 4 "277-2427-ND" H 2400 3300 60  0001 C CNN "Digikey PN"
+F 5 "Phoenix" H 2400 3300 60  0001 C CNN "Mfg. "
+F 6 "1844525" H 2400 3300 60  0001 C CNN "Mfg. PN"
+	1    2400 3300
 	-1   0    0    1   
 $EndComp
 Text Label 7400 850  0    60   ~ 0
@@ -722,9 +709,9 @@ F 3 "" H 7600 1000 50  0001 C CNN
 $EndComp
 Text Label 1500 5300 2    60   ~ 0
 GND
-Text Label 2850 3250 0    60   ~ 0
+Text Label 2850 3450 0    60   ~ 0
 5V
-Text Label 2850 3350 0    60   ~ 0
+Text Label 2850 3550 0    60   ~ 0
 ArduinoLED
 $Comp
 L R R17
@@ -765,25 +752,27 @@ $EndComp
 Text Label 3900 6650 3    60   ~ 0
 ArduinoLED
 $Comp
-L GND #PWR01
+L GND #PWR101
 U 1 1 597FD493
-P 2600 1950
-F 0 "#PWR01" H 2600 1700 50  0001 C CNN
-F 1 "GND" H 2600 1800 50  0000 C CNN
-F 2 "" H 2600 1950 50  0001 C CNN
-F 3 "" H 2600 1950 50  0001 C CNN
-	1    2600 1950
+P 2650 1600
+F 0 "#PWR101" H 2650 1350 50  0001 C CNN
+F 1 "GND" H 2650 1450 50  0000 C CNN
+F 2 "" H 2650 1600 50  0001 C CNN
+F 3 "" H 2650 1600 50  0001 C CNN
+	1    2650 1600
 	-1   0    0    1   
 $EndComp
 $Comp
-L CONN_01X05 J5
-U 1 1 59813A70
-P 2400 2150
-F 0 "J5" H 2400 2450 50  0000 C CNN
-F 1 "CONN_01X05" V 2500 2150 50  0000 C CNN
-F 2 "" H 2400 2150 50  0001 C CNN
-F 3 "" H 2400 2150 50  0001 C CNN
-	1    2400 2150
+L CONN_01X05 J101
+U 1 1 598148B2
+P 2450 1800
+F 0 "J101" H 2450 2100 50  0000 C CNN
+F 1 "CONN_01X05" V 2550 1800 50  0000 C CNN
+F 2 "" H 2450 1800 50  0001 C CNN
+F 3 "" H 2450 1800 50  0001 C CNN
+	1    2450 1800
 	-1   0    0    1   
 $EndComp
+Wire Wire Line
+	2650 2000 2900 2000
 $EndSCHEMATC
