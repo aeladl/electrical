@@ -2523,8 +2523,8 @@
       (xy 0.004605 -5.919414) (xy 0.072011 -5.919134)) (layer F.SilkS) (width 0.01))
   )
 
-  (gr_text "Nicola Duffy\nParadigm 2017" (at 86.36 99.06 90) (layer F.SilkS)
-    (effects (font (size 0.7 0.7) (thickness 0.1)))
+  (gr_text "Nicola Duffy\nParadigm 2017\nLED Board\n" (at 121.666 78.867) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.2)))
   )
   (gr_text "Arduino Inputs\nOrder: LED 1, Buzzer 1, LED 2-9, 24V, 5V, Buzzer 2, GND" (at 125.73 96.52) (layer F.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
